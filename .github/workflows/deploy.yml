@@ -23,7 +23,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '22'
+        node-version: '24'
         cache: 'npm'
 
     - name: Install dependencies
@@ -32,7 +32,7 @@ jobs:
     - name: Build project
       run: |
         echo "开始构建..."
-        npm run build
+        npm run build:githubio
         
         echo "=== 完整的 dist 目录结构 ==="
         find dist/ -type f | sort

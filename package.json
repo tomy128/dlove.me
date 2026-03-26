@@ -5,7 +5,8 @@
   "description": "DLove 是一个面向现代数字原住民的情感表达平台",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build --mode production || docker cp  dist nginx:/home/",
+    "build": "vite build --mode production",
+    "build:githubio": "vite build --mode githubio",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },

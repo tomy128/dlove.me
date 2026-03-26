@@ -10,6 +10,7 @@ export default defineConfig(({command, mode}) => {
   console.info('Backend Server infos: ', envConfig.VITE_API_BASE_URL + envConfig.VITE_API_URI_PREFIX)
 
   return {
+    base: envConfig.VITE_BASE_PATH || '/',
     build: {
       target: 'esnext',
       rollupOptions: {
